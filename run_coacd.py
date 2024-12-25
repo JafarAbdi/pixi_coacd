@@ -37,8 +37,8 @@ if __name__ == "__main__":
     input_file = pathlib.Path(args.input)
     output_file = pathlib.Path(args.output)
 
-    if not os.path.isfile(input_file):
-        print(input_file, "is not a file")
+    if not input_file.exists():
+        print(f"Input file {input_file} does not exist.")
         exit(1)
 
     mesh = trimesh.load(input_file, force="mesh")
