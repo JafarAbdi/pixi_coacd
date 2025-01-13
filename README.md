@@ -16,3 +16,9 @@ pixi install -a
 ```bash
 pixi run coacd -i ./INPUT.SUFFIX -o ./OUTPUT_DIR -t 0.05
 ```
+
+If you want to run the main coacd provided by the main repo:
+
+```bash
+.pixi/envs/default/bin/coacd -i ./INPUT.SUFFIX -o ./OUTPUT_DIR -t 0.2
+```
